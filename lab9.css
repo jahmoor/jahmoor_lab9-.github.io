@@ -1,0 +1,66 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#hero-banner {
+    background-color: navy;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Security Status Banner */
+#security-status {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.service-box {
+    display: inline-block;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+
+.service-box:hover {
+    transform: scale(1.1) translateY(-10px);
+    background-color: lightblue;
+}
